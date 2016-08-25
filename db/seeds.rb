@@ -1,6 +1,7 @@
 # read in the text file
 plants = []
-plant_file = '/Users/spencerdezartsmith/Desktop/plant-me/plant-me/db/plant_data.txt'
+plant_file = '/Users/spencerdezartsmith/Desktop/plant-me/db/plant_data.txt'
+
 File.readlines(plant_file).each do |line|
   plants << line.chomp
 end
