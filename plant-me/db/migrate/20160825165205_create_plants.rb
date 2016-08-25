@@ -2,7 +2,7 @@ class CreatePlants < ActiveRecord::Migration
   def change
     create_table :plants do |t|
       t.string :name
-      t.string :description
+      t.text :description
       t.integer :max_height
       t.integer :max_width
       t.integer :light_requirement

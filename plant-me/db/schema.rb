@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20160825165205) do
 
   create_table "plants", force: true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description"
     t.integer  "max_height"
     t.integer  "max_width"
     t.integer  "light_requirement"
