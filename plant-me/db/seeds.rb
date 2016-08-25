@@ -1,7 +1,20 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+# read in the text file
+plants = []
+File.readlines(plant_file).each do |line|
+  plants << line.chomp
+end
+# each plant as an array
+each_plant = []
+plants.each_slice(6) { |plant| each_plant << plant }
+
+# seed database
+each_plant.each do |plant|
+  Plant.create(
+              name: plant[0],
+              description: plant[1],
+              max_height: plant[2].to_i,
+              max_width: plant[3].to_i,
+              light_requirement: plant[4].to_i,
+              water_requirement: plant[5].to_i
+              )
+end
