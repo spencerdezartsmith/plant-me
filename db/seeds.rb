@@ -1,8 +1,8 @@
 # read in the text file
 plants = []
-plant_file = '/Users/spencerdezartsmith/Desktop/plant-me/db/plant_data.txt'
+# plant_file = ''
 
-File.readlines(plant_file).each do |line|
+File.readlines('db/plant_data.txt').each do |line|
   plants << line.chomp
 end
 
@@ -44,10 +44,6 @@ Image.create(
 )
 
 Image.create(
-   url: "https://lh3.googleusercontent.com/-bS6f--JKRYQ/VSEy47wcQvI/AAAAAAAAEzU/wBT26kVM8gA/w2048-h1368/garden-plant-with-nice-pot-with-red-pot-on-the-wall-good-looking-pretty-nice-modern-and-awesome-design-of-low-light-pet-safe-houseplants-fresh-and-natural-make-the-room-feel-in-cool.jpg"
-)
-
-Image.create(
    url: "http://www.hgtv.com/content/dam/images/grdn/fullset/2013/11/26/0/CI_the-grommet.jpg    "
 )
 
@@ -61,10 +57,6 @@ Image.create(
 
 Image.create(
    url: "http://www.simply-nicole.com/wp-content/uploads/2016/01/DSC_0443-RS.jpg"
-)
-
-Image.create(
-   url: "http://www.jacekpartyka.com/wp-content/uploads/2014/08/furniture-home-design-architecture-interior-kitchen-popular-design-living-room-exterior-office-dining-room-garden-lightings-apartment-decoration-indoor-green-wall-with-awesome-some-long-leaved-plant.jpeg"
 )
 
 Image.create(
