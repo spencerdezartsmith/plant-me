@@ -17,7 +17,11 @@ ActiveRecord::Schema.define(version: 20160825174913) do
   enable_extension "plpgsql"
 
   create_table "images", force: true do |t|
+<<<<<<< HEAD
     t.string   "url"
+=======
+    t.text     "url"
+>>>>>>> d5059acb4448a3759555afc2ded28a530fe87628
     t.datetime "created_at"
     t.datetime "updated_at"
   end
