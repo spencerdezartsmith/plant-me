@@ -4,7 +4,15 @@ class PlantsController < ApplicationController
   end
 
   def search
-    
-    @plants = Plant.where(light_requirement: params['plants']['light'], water_requirement: params['plants']['water'],)
+    case size
+      when params['plant']['size'] == 1
+        1...2
+      when params['plant']['size'] == 2
+        2...4
+      when params['plant']['size'] == 3
+        > 3
+      end
+    else
+    @plants = Plant.where(light_requirement: params['plants']['light'], water_requirement: params['plants']['water'], max_height: size)
   end
 end
