@@ -400,6 +400,1092 @@ Migrating to CreateImages (20160825174913)
 
 
 
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 83ms (Views: 71.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 16:49:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:51:39 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 13ms
+
+ActionView::Template::Error (undefined local variable or method `plants_search' for #<#<Class:0x007f9e1fba0c60>:0x007f9e1fba0350>):
+    42:
+    43:
+    44:
+    45: <% form_tag plants_search, :method => 'get' do %>
+    46:   <p>
+    47:     <%= text_field_tag :search, params[:search] %>
+    48:     <%= submit_tag "Search", :name => nil %>
+  app/views/plants/index.html.erb:45:in `_app_views_plants_index_html_erb__3530299458576337757_70158556944380'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:52:17 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (8.6ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `plants_search' for #<#<Class:0x007f9e1fba0c60>:0x007f9e1fb2bac8>):
+    42:
+    43:
+    44:
+    45: <% form_tag plants_search, :method => 'get' do %>
+    46:   <p>
+    47:     <%= select_tag( [ ['Bright', 3], ['Medium', 2], ['Low', 1] ] )%>
+    48:     <%= submit_tag "Search", :name => nil %>
+  app/views/plants/index.html.erb:45:in `_app_views_plants_index_html_erb__3530299458576337757_70158556681040'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:52:50 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (9.0ms)
+Completed 500 Internal Server Error in 12ms
+
+ActionView::Template::Error (undefined local variable or method `plants_search' for #<#<Class:0x007f9e1fba0c60>:0x007f9e1bf317c0>):
+    42:
+    43:
+    44:
+    45: <% form_tag plants_search, :method => 'get' do %>
+    46:
+    47: <% end %>
+  app/views/plants/index.html.erb:45:in `_app_views_plants_index_html_erb__3530299458576337757_70158525235700'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (12.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:53:35 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (8.5ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `plants_search' for #<#<Class:0x007f9e1fba0c60>:0x007f9e1f838758>):
+    42:
+    43:
+    44:
+    45: <% form_tag plants_search, :method => 'get' do %>
+    46:
+    47: <% end %>
+  app/views/plants/index.html.erb:45:in `_app_views_plants_index_html_erb__3530299458576337757_70158525235700'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.0ms)
+
+
+Started GET "/plants" for 127.0.0.1 at 2016-08-25 16:53:46 -0700
+
+ActionController::RoutingError (No route matches [GET] "/plants"):
+  actionpack (4.1.5) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.5) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.5) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.5) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.5) lib/rails/engine.rb:514:in `call'
+  railties (4.1.5) lib/rails/application.rb:144:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 41ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 16:54:00 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 16:59:40 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+... ["Medium", 2], ["Low", 1]])) );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (18.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:00:40 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (28.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (44.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:02:25 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:46: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:46: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:03:14 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 11ms
+
+ActionView::Template::Error (undefined local variable or method `f' for #<#<Class:0x007f9e1fba0c60>:0x007f9e209906e0>):
+    50: <%# end %> -->
+    51:
+    52: <% form_tag plants_search_path, :method => 'get' do %>
+    53:   <%= f.label :light_requirement, class: 'control-label'  %><br>
+    54:   <%#= f.select (:light_type, options_for_select([["Bright", 3], ["Medium", 2], ["Low", 1]]))  %>
+    55: <% end %>
+  app/views/plants/index.html.erb:53:in `block in _app_views_plants_index_html_erb__3530299458576337757_70158564153960'
+  app/views/plants/index.html.erb:52:in `_app_views_plants_index_html_erb__3530299458576337757_70158564153960'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (13.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:03:22 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+    50: <%# end %> -->
+    51:
+    52: <% form_tag plants_search_path, :method => 'get' do |f| %>
+    53:   <%= f.label :light_requirement, class: 'control-label'  %><br>
+    54:   <%#= f.select (:light_type, options_for_select([["Bright", 3], ["Medium", 2], ["Low", 1]]))  %>
+    55: <% end %>
+  app/views/plants/index.html.erb:53:in `block in _app_views_plants_index_html_erb__3530299458576337757_70158525254300'
+  app/views/plants/index.html.erb:52:in `_app_views_plants_index_html_erb__3530299458576337757_70158525254300'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:03:31 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (2.0ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `label' for nil:NilClass):
+    50: <%# end %> -->
+    51:
+    52: <% form_tag plants_search_path, :method => 'get' do |f| %>
+    53:   <%= f.label :light_requirement, class: 'control-label'  %><br>
+    54:
+    55: <% end %>
+  app/views/plants/index.html.erb:53:in `block in _app_views_plants_index_html_erb__3530299458576337757_70158555238380'
+  app/views/plants/index.html.erb:52:in `_app_views_plants_index_html_erb__3530299458576337757_70158555238380'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:03:41 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:03:54 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+...r.append=( select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+  app/views/plants/index.html.erb:58: syntax error, unexpected keyword_ensure, expecting end-of-input
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (19.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:04:10 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.7ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:04:10 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 3ms
+
+SyntaxError (/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+...append=( f.select (:light_type, options_for_select([["Bright...
+...                               ^
+/Users/apprentice/Desktop/plant-me/app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+...["Medium", 2], ["Low", 1]]))  );@output_buffer.safe_append='
+...                               ^):
+  app/views/plants/index.html.erb:54: syntax error, unexpected ',', expecting ')'
+  app/views/plants/index.html.erb:54: syntax error, unexpected ')', expecting keyword_end
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (15.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 49ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:04:56 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 46ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 43.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:08:26 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 51ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:22 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&commit=Search" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:09:23 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&commit=Search" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 45.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:11:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:11:28 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.5ms)
+Completed 500 Internal Server Error in 3ms
+
+ActionView::Template::Error (undefined method `map' for nil:NilClass):
+    38:
+    39:  -->
+    40: <%= form_tag plants_search_path, :method => 'get' do %>
+    41:   <%= select_tag "people", options_from_collection_for_select(@plants, "id", "name") %>
+    42:
+    43:   <%= submit_tag("Search") %>
+    44: <% end %>
+  app/views/plants/index.html.erb:41:in `block in _app_views_plants_index_html_erb__3530299458576337757_70158523548420'
+  app/views/plants/index.html.erb:40:in `_app_views_plants_index_html_erb__3530299458576337757_70158523548420'
+
+
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/apprentice/.rbenv/versions/2.1.5/lib/ruby/gems/2.1.0/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (14.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 50ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:12:21 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:13:51 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 48ms (Views: 47.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:13:52 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:14:26 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 40ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:14:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:14:26 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:14:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:14:27 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:14:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:14:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:14:27 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 47ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:35 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plants=Medium&commit=Search" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plants"=>"Medium", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 45ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:15:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:20:52 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 46.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:20:53 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 45ms (Views: 44.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:07 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:21:22 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:15 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:25 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 41ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 56ms (Views: 55.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:52 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&light=Bright&water=High&size=Large&commit=Search" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "light"=>"Bright", "water"=>"High", "size"=>"Large", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 39.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:22:54 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:23:26 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:26 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:26 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5B%3Alight%5D=Bright&water=High&size=Large&commit=Search" for 127.0.0.1 at 2016-08-25 17:23:27 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{":light"=>"Bright"}, "water"=>"High", "size"=>"Large", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 47ms (Views: 46.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:28 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5B%3Alight%5D=Bright&water=High&size=Large&commit=Search" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{":light"=>"Bright"}, "water"=>"High", "size"=>"Large", "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:23:59 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 43ms (Views: 42.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:01 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=Medium&plant%5Bwater%5D=Medium&plant%5Bsize%5D=Medium&commit=Search" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"Medium", "water"=>"Medium", "size"=>"Medium"}, "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 46ms (Views: 45.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:24:06 -0700
+=======
 Started GET "/" for 127.0.0.1 at 2016-08-25 12:10:58 -0700
   [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by Rails::WelcomeController#index as HTML
@@ -704,3 +1790,4 @@ PG::StringDataRightTruncation: ERROR:  value too long for type character varying
   [1m[35mImage Exists (0.2ms)[0m  SELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg' LIMIT 1
   [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", "2016-08-25 19:17:30.897926"], ["updated_at", "2016-08-25 19:17:30.897926"], ["url", "http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg"]]
   [1m[35m (0.3ms)[0m  COMMIT
+
