@@ -14479,3 +14479,322 @@ Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:19:00 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:19:00 -0700
 >>>>>>> 82e747e41383dbc47f77e8fb7a0b3888880273d4
+  [1m[36m (6.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (4.0ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePlants (20160825165205)
+  [1m[35m (0.4ms)[0m  BEGIN
+  [1m[36m (7.3ms)[0m  [1mCREATE TABLE "plants" ("id" serial primary key, "name" character varying(255), "image_url" text, "description" text, "max_height" integer, "light_requirement" integer, "water_requirement" integer, "wiki_url" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160825165205"]]
+  [1m[36m (1.0ms)[0m  [1mCOMMIT[0m
+Migrating to CreateImages (20160825174913)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (3.4ms)[0m  [1mCREATE TABLE "images" ("id" serial primary key, "url" text, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20160825174913"]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.6ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.328964"], ["description", "an easy-care succulent, has distinctive elongated leaves that fan out in a vase shape from a central base. Try smaller varieties such as Aloe vera on a sunny kitchen window. Aloes work nicely in dish gardens and in rooms with Southwestern decor. Keep the spiky leaves away from high-traffic areas."], ["image_url", "https://cdn.davidwolfe.com/wp-content/uploads/2015/12/aloe-vera.jpg"], ["light_requirement", 3], ["max_height", 3], ["name", "Aloe"], ["updated_at", "2016-08-26 18:30:32.328964"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Aloe"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.334234"], ["description", "Showy flowers give bright color for eight weeks or more each year to anthurium (Anthurium andraeanum, also known as flamingo flower). Flowers typically are red, but you can find hybrids in shades of pink, lavender, white and even green. Anthurium flower blossoms make superb cut flowers because they last a long time. Note that the pretty, heart-shape leaves contain toxic sap, so make sure pets and children do not ingest them."], ["image_url", "http://www.gardens4you.ie/ShopImages/product/FD15674WH.JPG"], ["light_requirement", 2], ["max_height", 3], ["name", "Anthurium"], ["updated_at", "2016-08-26 18:30:32.334234"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Anthurium"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.335811"], ["description", "Delicate needlelike foliage drapes from this subtropical relative of asparagus, which is not a true fern. Stems of asparagus fern (Asparagus densiflorus) shoot upward and outward, making it a good hanging basket plant. Small white flowers hidden among needles turn into bright red berries. Keep the poisonous berries away from children and pets."], ["image_url", "http://cdn.notonthehighstreet.com/fs/30/0c/d140-e599-4c74-bc23-031fcf88d6bb/original_asparagus-fern-also-known-as-plumosa-fern-house-plant.jpg"], ["light_requirement", 2], ["max_height", 3], ["name", "Asparagus fern"], ["updated_at", "2016-08-26 18:30:32.335811"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Asparagus_aethiopicus"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.337289"], ["description", "The easy-care peace lily (Spathiphyllum wallisii) tolerates low humidity and low light. Its glossy, lance-shape leaves tip arching stems that surround the central flower spikes. The spoon-shape flowers normally appear in summer, but many cultivars bloom intermittently throughout the year. The dark leaves look attractive in a plain pot with a glossy finish."], ["image_url", "http://thefamilytreeinc.com/wp-content/uploads/2016/02/Peace-Lily-6.jpg"], ["light_requirement", 1], ["max_height", 6], ["name", "Peace lily"], ["updated_at", "2016-08-26 18:30:32.337289"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Spathiphyllum"]]
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.338724"], ["description", "Peperomia's most interesting feature is its leaves, which vary in shape (heart shape to narrow), texture (waxy to wafflelike) and color (green, reddish or silvery gray). Plants occasionally produce slender flowery spikes that resemble rat's tails. Use on tabletops and as a companion in dish gardens and mixed baskets. The plant tolerates the low light of a north windowsill and stays small enough to fit on a desk or to be used in a terrarium."], ["image_url", "https://upload.wikimedia.org/wikipedia/commons/1/14/Peperomia_caperata_1-OB9.jpg"], ["light_requirement", 1], ["max_height", 1], ["name", "Peperomia"], ["updated_at", "2016-08-26 18:30:32.338724"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Peperomia"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.340241"], ["description", "This carefree, tough succulent grows almost anywhere. Snake plant (Sansevieria spp.) tolerates neglect but responds nicely to good care. Leathery, sword-shape leaves grow edged with yellow or white. Snake plant is great for beginners, but experienced houseplant growers also love it for its dramatic upright form. When grown in bright light, it sends up a tall stalk of greenish fragrant flowers. The dwarf rosette varieties make nice desktop or tabletop plants."], ["image_url", "https://upload.wikimedia.org/wikipedia/commons/9/91/Snake_plant.jpg"], ["light_requirement", 1], ["max_height", 4], ["name", "Snake plant"], ["updated_at", "2016-08-26 18:30:32.340241"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Sansevieria_trifasciata"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.341768"], ["description", "Slow-growing cast-iron plant (Aspidistra elatior) lives up to its name. It's almost indestructible, withstanding neglect, low light, low humidity and a wide range of temperatures -- perfect for a dark corner. Start with large plants since plants grow slowly."], ["image_url", "https://www.newprocontainers.com/blog/wp-content/uploads/2013/04/Cast-Iron-Plant.jpg"], ["light_requirement", 1], ["max_height", 2], ["name", "Cast-iron plant"], ["updated_at", "2016-08-26 18:30:32.341768"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Aspidistra_elatior"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.343424"], ["description", "One of many types of easy-care cactus, Christmas cactus (Schlumbergera x buckleyi) offers a graceful arching appearance, with long segmented stems and whorls of satiny flowers in lilac, deep rose, salmon, red-orange or white. Plants usually bloom mid- to late December. After blooming is finished, prune by pinching or using a sharp knife to cut off several sections. This encourages the plant to branch, creating a fuller plant with more blossoms."], ["image_url", "http://www.serenitysecretgarden.com/wp-content/uploads/sites/1106/2015/11/Christmas-Cactus-1.jpg"], ["light_requirement", 3], ["max_height", 1], ["name", "Christmas cactus"], ["updated_at", "2016-08-26 18:30:32.343424"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Schlumbergera"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.345009"], ["description", "Arching pointed leaves up to 12 inches long, usually marbled with white or cream, grow out of a canelike stem. The large leaves of dieffenbachia (Dieffenbachia spp.) provide a tropical architectural accent; the plant also blends well into a mixed grouping of foliage. One of dieffenbachia's common names, dumb cane, comes from the toxic sap in the leaves and stems that causes tongue numbness and swelling when chewed by humans or pets."], ["image_url", "http://www.avasflowers.net/img/prod_img/avasflowers-dieffenbachia-plant_max.jpg"], ["light_requirement", 1], ["max_height", 6], ["name", "Dieffenbachia"], ["updated_at", "2016-08-26 18:30:32.345009"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Dieffenbachia"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.346554"], ["description", "An excellent foliage plant for low to medium light, slow-growing Chinese evergreen (Aglaonema commutatum) can live for 10 years or more. Its standout feature: arching, lance-shape leaves, which are usually variegated with silver, gray or shades of green. Put a small plant on a living room table, or group larger ones with other low-light plants."], ["image_url", "https://s3.amazonaws.com/files.usmre.com/5099/blog/ChineseEvergreen_brassbuttons_redairplant.JPG"], ["light_requirement", 1], ["max_height", 3], ["name", "Chinese evergreen"], ["updated_at", "2016-08-26 18:30:32.346554"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Aglaonema"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.348044"], ["description", "A large group of popular foliage plants, Dracaena (Dracaena spp.) display long, straplike leaves variegated with white, cream or red. Use young plants on tabletops. Larger plants require floor space, where they make striking specimens or work well in foliage groupings. Maintain plants at less than 6 feet by lopping off the top of the plant; within weeks a pair of new shoots will appear just below the cut."], ["image_url", "http://image.made-in-china.com/2f0j00yeAQcqfdrozu/Dracaena-Fragrans-Bonsia-JTLA-0018-.jpg"], ["light_requirement", 2], ["max_height", 10], ["name", "Dracaena"], ["updated_at", "2016-08-26 18:30:32.348044"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Dracaena_(plant)"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.349446"], ["description", "This versatile foliage plant's dainty demeanor makes it suitable for hanging baskets or pots. It's among the best houseplants for training on topiary forms or using as a groundcover beneath larger houseplants. Place English ivy (Hedera helix) on a mantel or shelf where the stems can hang down. The stems can grow quite long but are easily controlled with pruning."], ["image_url", "http://cdn3.volusion.com/zxfvf.jptpy/v/vspfiles/photos/VCGS-FLOWER-34-2.jpg?1373609615"], ["light_requirement", 2], ["max_height", 1], ["name", "English ivy"], ["updated_at", "2016-08-26 18:30:32.349446"], ["water_requirement", 3], ["wiki_url", "https://en.wikipedia.org/wiki/Hedera_helix"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.350883"], ["description", "Glossy green leaves spread out from an upright woody plant that's available as a single-trunk tree or multistem shrub. Use durable ficus (Ficus spp.) as a tabletop or floor plant depending on its size. Place your ficus where it won't have to be moved all winter, because it doesn't like changes in environmental conditions."], ["image_url", "http://demostore.modularmerchant.com/images/plants/FicusTree%201.jpg"], ["light_requirement", 2], ["max_height", 12], ["name", "Ficus"], ["updated_at", "2016-08-26 18:30:32.350883"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Ficus"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.352377"], ["description", "A fast-growing, trailing plant, hoya (Hoya spp.) shows off both smooth, shiny foliage and pink or white flowers with red centers. The waxy, sweetly scented flowers give hoya its alternate common name, wax plant. Place in hanging baskets or train it to grow upward along a trellis. Wrap long vines around a form to make a wreath. Small-leaf types can be trained into topiaries. The easiest of the clan: Hoya carnosa."], ["image_url", "http://www.whatgrowsthere.com/grow/wp-content/uploads/2012/12/DSC03729.jpg"], ["light_requirement", 2], ["max_height", 1], ["name", "Hoya"], ["updated_at", "2016-08-26 18:30:32.352377"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Hoya"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.354031"], ["description", "The elegant, upright parlor palm (Chamaedorea elegans) has been a popular houseplant since Victorian times. Straplike green leaflets on feathery fronds grow 9 to 24 inches long. It's great for filling an empty corner and can get by on lower light than other palms. Young plants will do nicely in a terrarium while small."], ["image_url", "http://ponsetilandscaping.com/wp-content/uploads/2013/08/parlor-palm.jpg"], ["light_requirement", 1], ["max_height", 8], ["name", "Parlor palm"], ["updated_at", "2016-08-26 18:30:32.354031"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Chamaedorea_elegans"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.355525"], ["description", "This durable foliage plant (Philodendron spp.) has long been the backbone of indoor gardening. The popular heart-leaf philodendron has slender stems with leaves up to 4 inches long. Philodendron is easy to grow, easy to propagate (just root from stem tip cuttings) and adapts well to almost any indoor setting. Try small specimens in dish gardens and mixed baskets. The plant's low light tolerance makes it a good choice for bookshelves and for draping over the sides of a large piece of furniture. Note that leaves are poisonous to pets and people if eaten in large amount."], ["image_url", "http://3.bp.blogspot.com/_AfD_41GlxH4/S94cFLLmH2I/AAAAAAAAAGM/cNRsO3Nyqj8/s1600/philodendron2.jpg"], ["light_requirement", 1], ["max_height", 10], ["name", "Philodendron"], ["updated_at", "2016-08-26 18:30:32.355525"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Philodendron"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.357058"], ["description", "Spider plant (Chlorophytum comosum) looks striking in a hanging basket or on a pedestal, with its \"babies\" overflowing the pot. Most plants are the cultivar 'Vittatum', which has a white stripe down the center of each leaf, though all-green plants are also available. Brown leaf tips, which are common with spider plants, are due to contaminated water, usually from fluoride, or to overfertilization, low humidity or dry soil conditions. Trim damaged leaves with scissors. Use rainwater or distilled water if your tap water is fluoridated."], ["image_url", "http://www.planfor.co.uk/Donnees_Site/Produit/Images/B099/spider-plant-white-cachepot_UK_500_0009929.jpg"], ["light_requirement", 2], ["max_height", 1], ["name", "Spider plant"], ["updated_at", "2016-08-26 18:30:32.357058"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Chlorophytum_comosum"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.358612"], ["description", "The trailing stems of tradescantias (Tradescantia spp.) change direction slightly at each node, giving the plant a zigzag look. Grow in mixed baskets, hanging baskets or as a groundcover under larger houseplants. Varietaged and purple-leaf types need bright light to maintain colors. Older plants become leggy and unkempt; replace them with new plants from rooted cuttings."], ["image_url", "http://www.greenobsessions.com/wp-content/uploads/2015/04/edited1.jpg"], ["light_requirement", 2], ["max_height", 1], ["name", "Tradescantia"], ["updated_at", "2016-08-26 18:30:32.358612"], ["water_requirement", 1], ["wiki_url", "https://en.wikipedia.org/wiki/Tradescantia"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"[0m  [["created_at", "2016-08-26 18:30:32.360203"], ["description", "Despite its name, Swedish ivy (Plectranthus verticillatus), the most common plant in the plectranthus family, is native to South African and Australia - not Sweden - and is more closely related to mint than ivy. Its cascading stems studded with glossy rounded, scalloped-edge leaves make it primarily a foliage plant. But if often blooms in late spring or early summer with tiny white or pale mauve blooms on short spikes. Its tidy drapes make Swedish ivy a great choice for hanging baskets."], ["image_url", "http://www.timberpress.com/blog/wp-content/uploads/2015/08/107_52_038_KC-WEB.jpg"], ["light_requirement", 2], ["max_height", 1], ["name", "Plectranthus"], ["updated_at", "2016-08-26 18:30:32.360203"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Plectranthus"]]
+  [1m[35m (0.3ms)[0m  COMMIT
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "plants" ("created_at", "description", "image_url", "light_requirement", "max_height", "name", "updated_at", "water_requirement", "wiki_url") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.361756"], ["description", "This lush foliage plant retains its variegation -- dark green leaves marked with white along the veins -- even in low light. Use small plants in mixed baskets and with other foliage plants in tabletop gardens. Train vining types to an upright form on a moss pole. Arrowhead vine (Syngonium podophyllum) does well in artificial light."], ["image_url", "https://i.ytimg.com/vi/kfFPMHl3d6M/maxresdefault.jpg"], ["light_requirement", 1], ["max_height", 3], ["name", "Arrowhead vine"], ["updated_at", "2016-08-26 18:30:32.361756"], ["water_requirement", 2], ["wiki_url", "https://en.wikipedia.org/wiki/Syngonium_podophyllum"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'https://scstylecaster.files.wordpress.com/2014/04/air-plants.jpg?w=1500&h=1500' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.377364"], ["updated_at", "2016-08-26 18:30:32.377364"], ["url", "https://scstylecaster.files.wordpress.com/2014/04/air-plants.jpg?w=1500&h=1500"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.6ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.380452"], ["updated_at", "2016-08-26 18:30:32.380452"], ["url", "http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'https://lh3.googleusercontent.com/-bS6f--JKRYQ/VSEy47wcQvI/AAAAAAAAEzU/wBT26kVM8gA/w2048-h1368/garden-plant-with-nice-pot-with-red-pot-on-the-wall-good-looking-pretty-nice-modern-and-awesome-design-of-low-light-pet-safe-houseplants-fresh-and-natural-make-the-room-feel-in-cool.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.382568"], ["updated_at", "2016-08-26 18:30:32.382568"], ["url", "https://lh3.googleusercontent.com/-bS6f--JKRYQ/VSEy47wcQvI/AAAAAAAAEzU/wBT26kVM8gA/w2048-h1368/garden-plant-with-nice-pot-with-red-pot-on-the-wall-good-looking-pretty-nice-modern-and-awesome-design-of-low-light-pet-safe-houseplants-fresh-and-natural-make-the-room-feel-in-cool.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'https://www.waplag.net/5/2015/06/brick-wall-living-room-black-exposed-brick-wall-panel-urban-living-room-house-design-indoor-plant-shelf-mounted-tv-ideas-wall-panel-ideas.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.384507"], ["updated_at", "2016-08-26 18:30:32.384507"], ["url", "https://www.waplag.net/5/2015/06/brick-wall-living-room-black-exposed-brick-wall-panel-urban-living-room-house-design-indoor-plant-shelf-mounted-tv-ideas-wall-panel-ideas.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.jacekpartyka.com/wp-content/uploads/2014/08/furniture-home-design-architecture-interior-kitchen-popular-design-living-room-exterior-office-dining-room-garden-lightings-apartment-decoration-indoor-green-wall-with-awesome-some-long-leaved-plant.jpeg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.386345"], ["updated_at", "2016-08-26 18:30:32.386345"], ["url", "http://www.jacekpartyka.com/wp-content/uploads/2014/08/furniture-home-design-architecture-interior-kitchen-popular-design-living-room-exterior-office-dining-room-garden-lightings-apartment-decoration-indoor-green-wall-with-awesome-some-long-leaved-plant.jpeg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://deborahsilver.com/wp-content/uploads/2014/03/DSC_8655.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.388289"], ["updated_at", "2016-08-26 18:30:32.388289"], ["url", "http://deborahsilver.com/wp-content/uploads/2014/03/DSC_8655.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://cdn.homelife.com.au/images/51239/soleirolia-soleirolii-20160229144107~q75,dx2400y-u0r1g0,c--.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.390266"], ["updated_at", "2016-08-26 18:30:32.390266"], ["url", "http://cdn.homelife.com.au/images/51239/soleirolia-soleirolii-20160229144107~q75,dx2400y-u0r1g0,c--.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.hgtv.com/content/dam/images/grdn/fullset/2013/11/26/0/CI_the-grommet.jpg    ' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.392133"], ["updated_at", "2016-08-26 18:30:32.392133"], ["url", "http://www.hgtv.com/content/dam/images/grdn/fullset/2013/11/26/0/CI_the-grommet.jpg    "]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://cdn.home-designing.com/wp-content/uploads/2015/01/indoor-plant-ideas.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.394047"], ["updated_at", "2016-08-26 18:30:32.394047"], ["url", "http://cdn.home-designing.com/wp-content/uploads/2015/01/indoor-plant-ideas.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'https://ahbelab.files.wordpress.com/2015/06/lab_garden.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.395922"], ["updated_at", "2016-08-26 18:30:32.395922"], ["url", "https://ahbelab.files.wordpress.com/2015/06/lab_garden.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.simply-nicole.com/wp-content/uploads/2016/01/DSC_0443-RS.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.397819"], ["updated_at", "2016-08-26 18:30:32.397819"], ["url", "http://www.simply-nicole.com/wp-content/uploads/2016/01/DSC_0443-RS.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.4ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-179-shelf-houseplants-terra-cotta-dining-room-gardenista.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.399957"], ["updated_at", "2016-08-26 18:30:32.399957"], ["url", "http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-179-shelf-houseplants-terra-cotta-dining-room-gardenista.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-162-succulents-shelf-houseplants-terra-cotta-dining-room-gardenista.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.401827"], ["updated_at", "2016-08-26 18:30:32.401827"], ["url", "http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-162-succulents-shelf-houseplants-terra-cotta-dining-room-gardenista.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://bumpintoreality.com/wp-content/uploads/2015/03/IMG_1295-copy.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.403590"], ["updated_at", "2016-08-26 18:30:32.403590"], ["url", "http://bumpintoreality.com/wp-content/uploads/2015/03/IMG_1295-copy.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-151-benchhouseplants-terra-cotta-dining-room-gardenista.jpg' LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "images" ("created_at", "updated_at", "url") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", "2016-08-26 18:30:32.405576"], ["updated_at", "2016-08-26 18:30:32.405576"], ["url", "http://www.gardenista.com/wp-content/uploads/2016/06/PlantLibrary-151-benchhouseplants-terra-cotta-dining-room-gardenista.jpg"]]
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mImage Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "images"  WHERE "images"."url" = 'http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 11:41:52 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.4ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 5]]
+  Rendered plants/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 450ms (Views: 425.3ms | ActiveRecord: 3.3ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:41:53 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=2&plant%5Bwater%5D=2&plant%5Bsize%5D=3&commit=Search" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"2", "water"=>"2", "size"=>"3"}, "commit"=>"Search"}
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (1.0ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 7]]
+  [1m[35m (0.9ms)[0m  SELECT COUNT(*) FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 4 AND 20)
+  [1m[36mPlant Load (1.3ms)[0m  [1mSELECT "plants".* FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 4 AND 20)[0m
+  Rendered plants/search.html.erb within layouts/application (24.2ms)
+Completed 200 OK in 78ms (Views: 54.1ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:11 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=2&plant%5Bwater%5D=2&plant%5Bsize%5D=3&commit=Search" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"2", "water"=>"2", "size"=>"3"}, "commit"=>"Search"}
+  [1m[35m (0.6ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.6ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 4 AND 20)
+  [1m[36mPlant Load (0.6ms)[0m  [1mSELECT "plants".* FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 4 AND 20)[0m
+  Rendered plants/search.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 36ms (Views: 30.8ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:42:40 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 11:43:00 -0700
+Processing by PlantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.3ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered plants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=1&plant%5Bwater%5D=3&plant%5Bsize%5D=3&commit=Search" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"1", "water"=>"3", "size"=>"3"}, "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.4ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 13]]
+  [1m[35m (0.8ms)[0m  SELECT COUNT(*) FROM "plants"  WHERE "plants"."light_requirement" = 1 AND "plants"."water_requirement" = 3 AND ("plants"."max_height" BETWEEN 4 AND 20)
+  Rendered plants/search.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 116ms (Views: 111.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 11:43:04 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 11:43:05 -0700
+Processing by PlantsController#index as HTML
+  [1m[36m (6.3ms)[0m  [1mSELECT COUNT(*) FROM "images"[0m
+  [1m[35mImage Load (1.0ms)[0m  SELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1  [["id", 12]]
+  Rendered plants/index.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 86ms (Views: 66.6ms | ActiveRecord: 7.3ms)
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=1&plant%5Bwater%5D=2&plant%5Bsize%5D=1&commit=Search" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"1", "water"=>"2", "size"=>"1"}, "commit"=>"Search"}
+  [1m[36m (1.1ms)[0m  [1mSELECT COUNT(*) FROM "images"[0m
+  [1m[35mImage Load (0.7ms)[0m  SELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1  [["id", 13]]
+  [1m[36m (0.5ms)[0m  [1mSELECT COUNT(*) FROM "plants"  WHERE "plants"."light_requirement" = 1 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 1 AND 2)[0m
+  [1m[35mPlant Load (1.1ms)[0m  SELECT "plants".* FROM "plants"  WHERE "plants"."light_requirement" = 1 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 1 AND 2)
+  Rendered plants/search.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 43ms (Views: 33.6ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 11:43:14 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 11:44:50 -0700
+Processing by PlantsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "images"[0m
+  [1m[35mImage Load (0.2ms)[0m  SELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1  [["id", 2]]
+  Rendered plants/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.5ms)
