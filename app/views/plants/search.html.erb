@@ -3,18 +3,23 @@
 
 <div class="container green">
   <div class="row">
+    <% @plants.each do |plant| %>
+      <p>
+        <%= plant.name %>
+      </p>
+      <%= plant.description %>
+    <% end  %>
 
-    <div>
+    <!-- <div>
       <h1>Name</h1>
     </div>
      <div>
       <h1>Description</h1>
-    </div>
+    </div> -->
   </div>
 
 </div>
 <br>
 <center>
-  <a class="btn btn-primary btn-lg center" href="/plants" role="button">Back</a>
+  <a class="btn btn-primary btn-lg center" href="/" role="button">Back</a>
 </center>
-

@@ -1,10 +1,15 @@
 class PlantsController < ApplicationController
   def index
-    @image = Image.find(rand(1..Image.all.count))
+    @image = Image.find(rand(1..Image.all.count)).url
   end
 
   def search
     @plants = Plant.where(light_requirement: params['plant']['light'], water_requirement: params['plant']['water'], max_height: plant_size(params['plant']['size'].to_i))
+  end
+
+# jason you might need to change the params for the show depending on how its passed in
+  def show
+    @plant = Plant.find(params[:id])
   end
 
   private
