@@ -8,6 +8,7 @@ class CreatePlants < ActiveRecord::Migration
       t.integer :light_requirement
       t.integer :water_requirement
       t.text :wiki_url, :limit => nil
+      
       t.timestamps
     end
   end
