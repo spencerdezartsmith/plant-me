@@ -23,19 +23,8 @@ each_plant.each do |plant|
 
 end
 
-
-Image.create(
-   url: "https://scstylecaster.files.wordpress.com/2014/04/air-plants.jpg?w=1500&h=1500"
-)
-
-
 Image.create(
    url: "http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg"
-)
-
-
-Image.create(
-   url: "https://lh3.googleusercontent.com/-bS6f--JKRYQ/VSEy47wcQvI/AAAAAAAAEzU/wBT26kVM8gA/w2048-h1368/garden-plant-with-nice-pot-with-red-pot-on-the-wall-good-looking-pretty-nice-modern-and-awesome-design-of-low-light-pet-safe-houseplants-fresh-and-natural-make-the-room-feel-in-cool.jpg"
 )
 
 Image.create(
@@ -90,4 +79,28 @@ Image.create(
 
 Image.create(
    url: "http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg"
+)
+
+Image.create(
+   url: "http://gravityhomeblog.com/wp-content/uploads/2016/05/gravityhomeblog-small-plant-filled1.jpg"
+)
+
+Image.create(
+   url: "http://www.qarmazi.com/5/2015/06/apartment-living-room-decorating-ideas-with-small-plant-inside-the-room-and-beautiful-white-flower-flowers-or-plants-on-wall-indside-ideas.jpg"
+)
+
+Image.create(
+   url: "https://sunsetwestphoria.files.wordpress.com/2015/06/house-plants3.jpg"
+)
+
+Image.create(
+   url: "https://lifestyleanddesignonline.files.wordpress.com/2014/03/img_3000.jpg"
+)
+
+Image.create(
+   url: "https://cdn2.vox-cdn.com/uploads/chorus_asset/file/6513871/harlem2_marieviljoen.0.jpg"
+)
+
+Image.create(
+   url: "http://static6.techinsider.io/image/563ba696bd86ef335d8bc891-4000-2000/interior%20view%20apartment%20.jpg"
 )
