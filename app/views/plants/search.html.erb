@@ -1,25 +1,61 @@
-<h1 class="center">plants search</h1>
 
 
-<div class="container green">
+<div class="container center search-box">
+  <h1 class='title'>plants search</h1>
+</div>
+<br>
+
+
+<div class="container">
   <div class="row">
-    <% @plants.each do |plant| %>
-      <p>
-        <%= plant.name %>
-      </p>
-      <%= plant.description %>
+    <% if @plants.empty? %>
+     <div class="box center">
+        <h4 class='no-plant'>no plants matching your search</h4>
+      </div>
+    <% else %>
+      <center>
+        <% @plants.each do |plant| %>
+          <br>
+          
+          <div class="col-sm-12 plant-box">  
+            <div>
+              <h1>
+                <a href="/plants/<%= plant.id %>"><%= plant.name %></a>
+              </h1>
+            </div>
+            
+            <div>
+              <p>
+                <%= plant.description %>
+            </p>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4">
+              
+              <strong><p>Plant Light needs: <%= plant.light_requirement %></p> </strong>
+            </div>
+
+             <div class="col-sm-4 col-md-4 col-lg-4">
+             
+              <strong><p>Plant Water Requirement:  <%= plant.water_requirement %></p> </strong>
+            </div>
+
+             <div class="col-sm-4 col-md-4 col-lg-4">
+              <strong><p>Plant Hight: <%= plant.max_height %></p> </strong>
+            </div>
+          </div>
+
+        </div>
+      
+        <br>   
+        <% end  %>
+      </center>
     <% end  %>
-
-    <!-- <div>
-      <h1>Name</h1>
-    </div>
-     <div>
-      <h1>Description</h1>
-    </div> -->
   </div>
-
 </div>
 <br>
 <center>
   <a class="btn btn-primary btn-lg center" href="/" role="button">Back</a>
 </center>
+<br><br><br><br><br><br><br>
