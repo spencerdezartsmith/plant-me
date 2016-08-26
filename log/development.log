@@ -11659,3 +11659,70 @@ Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 01:32:45 -070
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 01:32:45 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 10:04:03 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlantsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.4ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 9]]
+  Rendered plants/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 461ms (Views: 438.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:04 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=2&plant%5Bwater%5D=2&plant%5Bsize%5D=2&commit=Search" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"2", "water"=>"2", "size"=>"2"}, "commit"=>"Search"}
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.4ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 12]]
+  [1m[35m (1.9ms)[0m  SELECT COUNT(*) FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 2 AND 4)
+  [1m[36mPlant Load (0.4ms)[0m  [1mSELECT "plants".* FROM "plants"  WHERE "plants"."light_requirement" = 2 AND "plants"."water_requirement" = 2 AND ("plants"."max_height" BETWEEN 2 AND 4)[0m
+  Rendered plants/search.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 59ms (Views: 37.6ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-26 10:04:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-26 10:04:31 -0700
+Processing by PlantsController#index as HTML
+  [1m[35m (0.5ms)[0m  SELECT COUNT(*) FROM "images"
+  [1m[36mImage Load (0.9ms)[0m  [1mSELECT  "images".* FROM "images"  WHERE "images"."id" = $1 LIMIT 1[0m  [["id", 2]]
+  Rendered plants/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 43ms (Views: 38.8ms | ActiveRecord: 1.4ms)
