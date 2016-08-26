@@ -26,17 +26,29 @@ Image.create(
    url: "https://scstylecaster.files.wordpress.com/2014/04/air-plants.jpg?w=1500&h=1500"
 )
 
+
+Image.create(
+   url: "http://www.qarmazi.com/5/2015/07/furniture-innovative-progressive-home-decoration-beige-nuance-living-room-beige-faux-leather-sofa-beige-seramic-tile-floor-fresh-green-indoor-plants-on-ivory-ceramic-pot-white-wooden-a-fresh-nuance-li.jpg"
+)
+
+
+Image.create(
+   url: "https://lh3.googleusercontent.com/-bS6f--JKRYQ/VSEy47wcQvI/AAAAAAAAEzU/wBT26kVM8gA/w2048-h1368/garden-plant-with-nice-pot-with-red-pot-on-the-wall-good-looking-pretty-nice-modern-and-awesome-design-of-low-light-pet-safe-houseplants-fresh-and-natural-make-the-room-feel-in-cool.jpg"
+)
+
 Image.create(
    url: "https://www.waplag.net/5/2015/06/brick-wall-living-room-black-exposed-brick-wall-panel-urban-living-room-house-design-indoor-plant-shelf-mounted-tv-ideas-wall-panel-ideas.jpg"
 )
 
 Image.create(
+   url: "http://www.jacekpartyka.com/wp-content/uploads/2014/08/furniture-home-design-architecture-interior-kitchen-popular-design-living-room-exterior-office-dining-room-garden-lightings-apartment-decoration-indoor-green-wall-with-awesome-some-long-leaved-plant.jpeg"
+)
+
+
+Image.create(
    url: "http://deborahsilver.com/wp-content/uploads/2014/03/DSC_8655.jpg"
 )
 
-Image.create(
-   url: "http://media4.s-nbcnews.com/i/newscms/2016_06/970826/english-ivy-tdy-home-tease-ae_d8a688e86e43bc301556fdcbb0f9378d.jpg"
-)
 
 Image.create(
    url: "http://cdn.homelife.com.au/images/51239/soleirolia-soleirolii-20160229144107~q75,dx2400y-u0r1g0,c--.jpg"
