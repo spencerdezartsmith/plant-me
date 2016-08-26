@@ -4,6 +4,7 @@ class PlantsController < ApplicationController
   end
 
   def search
+    @image = Image.find(rand(1..Image.all.count)).url
     @plants = Plant.where(light_requirement: params['plant']['light'], water_requirement: params['plant']['water'], max_height: plant_size(params['plant']['size'].to_i))
   end
 
