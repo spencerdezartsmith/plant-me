@@ -1,4 +1,4 @@
-<h1 class="center">plant me</h1>
+<!-- <h1 class="center">plant me</h1>
 <br>
 <div class="container">
   <div class="row">
@@ -36,3 +36,16 @@
   </div>
 </div>
 
+ -->
+
+<h1 class="center">plant me</h1>
+<center>
+<%= form_tag plants_search_path, :method => 'get', class: "form-group" do %>
+  <%= select_tag "plant[light]", options_for_select([ "Bright", "Medium", "Low" ], "Bright") %>
+  <%= select_tag "plant[water]", options_for_select([ "High", "Medium", "Low" ], "High") %>
+  <%= select_tag "plant[size]", options_for_select([ "Large", "Medium", "Small" ], "Large") %><br>
+  <%= submit_tag("Search") %>
+
+<% end %>
+
+</center>
