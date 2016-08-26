@@ -17,7 +17,7 @@ class PlantsController < ApplicationController
   
     def plant_size(params)
       if params == 1
-        return (1..2)
+        return 1..2
       elsif params == 2
           return 2..4
       elsif params == 3
