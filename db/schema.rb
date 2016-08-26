@@ -17,11 +17,7 @@ ActiveRecord::Schema.define(version: 20160825174913) do
   enable_extension "plpgsql"
 
   create_table "images", force: true do |t|
-<<<<<<< HEAD
-    t.string   "url"
-=======
     t.text     "url"
->>>>>>> d5059acb4448a3759555afc2ded28a530fe87628
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,7 +26,6 @@ ActiveRecord::Schema.define(version: 20160825174913) do
     t.string   "name"
     t.text     "description"
     t.integer  "max_height"
-    t.integer  "max_width"
     t.integer  "light_requirement"
     t.integer  "water_requirement"
     t.datetime "created_at"
