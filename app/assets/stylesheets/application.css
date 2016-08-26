@@ -15,6 +15,26 @@
  */
 
 body {}
+
+
+.toppad{
+    padding-top: 5%;
+}
+
+.tagline{
+    font-family: 'Sacramento', cursive;
+    text-shadow: -1px .5px 1px #F7F8FA;
+    font-size: 4em;
+}
+
+.left{
+    text-align: left;
+}
+
+.border{
+    border-style: solid;
+    border-width: 5px;
+}
 .center {
     text-align: center;
 }
@@ -22,8 +42,9 @@ body {}
     background-color: green;
 }
 .plant-box {
+    border-radius: 25px;
     background: #fff;
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(255, 255, 255, 0.50);
 }
 .title {
     font-family: 'Cutive Mono', monospace;
@@ -34,6 +55,7 @@ body {}
     font-family: 'Cutive Mono', monospace;
     text-shadow: 3px 3px 3px #595959;
     font-size: 2em;
+    color: black;
 }
 .tile-image {
     margin-right: 50%;
@@ -41,16 +63,18 @@ body {}
     height: 100%;
     background-repeat: no-repeat;
     background-size: 100% 100%;
+    color: black;
 }
 .conditions {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-shadow: -0.5px 0.5px 0.5px #F7F8FA;
     font-weight: bold;
     font-size: 1.5em;
 }
 .no-plant {
-    font-family: 'Quicksand', sans-serif;
-    font-size: 2em;
+    font-family: 'Sacramento', cursive;
+    text-shadow: -2px 1px 2px #F7F8FA;
+    font-size: 4em;
 }
 .search-box {
     margin-top: 5%;

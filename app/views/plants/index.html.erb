@@ -1,6 +1,7 @@
 <center>
   <div class="container title-box">
     <h1 class='title'>plant me</h1>
+    <h4 class="tagline">helping make spaces beautiful</h4>
   </div>
   <br>
 
@@ -24,7 +25,7 @@
           <strong><p class="conditions">Plant Size</p></strong>
           <%= select_tag "plant[size]", options_for_select([["Large", 3], ["Medium", 2], ["Small", 1]], "Large"),  {:class => 'form-control'} %><br>
         </div>
-        <%= submit_tag("Search",  {:class => 'btn btn-primary'}) %>
+        <%= submit_tag("Search",  {:class => 'btn btn-success'}) %>
       <% end %>
     </div>
   </div>
