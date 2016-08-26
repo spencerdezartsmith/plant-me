@@ -37,6 +37,16 @@ body{
   font-size: 8em;
 }
 
+.tile-title{
+  font-family: 'Cutive Mono', monospace;
+  text-shadow: 3px 3px 3px #595959;
+  font-size: 2em;
+}
+
+.tile-image{
+  width: 50%;
+  height: auto;
+}
 
 .conditions{
   font-family: 'Quicksand', sans-serif;
