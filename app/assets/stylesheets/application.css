@@ -25,12 +25,32 @@ body{
   background-color: green;
 }
 
+.plant-box{
+  background: #fff;
+  background: rgba(255,255,255,0.75);
+  margin: 10px;
+}
+
 .title{
 	font-family: 'Gravitas One', cursive;
 	/*font-family: 'Baloo Paaji', cursive;*/
 	font-size: 4em;
 }
 
+.no-plant{
+  /*font-family: 'Gravitas One', cursive;*/
+  font-family: 'Baloo Paaji', cursive;
+  font-size: 2em;
+}
+
+
+
+.search-box{
+	margin-top: 5%;
+    padding: 30px 15px;
+	background: #fff;
+    background: rgba(255,255,255,0.75);
+}
 
 .title-box{
 	margin-top: 15%;
@@ -41,7 +61,7 @@ body{
 
 
 .box{
-	margin-top: 15px;
+	margin-top: 5px;
 	margin-bottom: 20px;
     padding: 30px;
     background: #fff;
