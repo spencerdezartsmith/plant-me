@@ -2005,3 +2005,382 @@ PG::StringDataRightTruncation: ERROR:  value too long for type character varying
   [1m[35m (0.3ms)[0m  COMMIT
 
 >>>>>>> d5059acb4448a3759555afc2ded28a530fe87628
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 17:51:16 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 1162ms (Views: 1153.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 17:51:17 -0700
+
+
+Started GET "/plants/search?utf8=%E2%9C%93&plant%5Blight%5D=Bright&plant%5Bwater%5D=High&plant%5Bsize%5D=Large&commit=Search" for 127.0.0.1 at 2016-08-25 17:52:11 -0700
+Processing by PlantsController#search as HTML
+  Parameters: {"utf8"=>"✓", "plant"=>{"light"=>"Bright", "water"=>"High", "size"=>"Large"}, "commit"=>"Search"}
+  Rendered plants/search.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 35ms (Views: 34.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 17:52:11 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 17:52:11 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 17:52:11 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:00:33 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 5ms
+
+SyntaxError (/Users/jasonsutter/Documents/Projects/plant-me/app/views/plants/index.html.erb:46: syntax error, unexpected ')'
+...edium", "Small" ], "Large"),  );@output_buffer.safe_append='...
+...                               ^
+/Users/jasonsutter/Documents/Projects/plant-me/app/views/plants/index.html.erb:49: syntax error, unexpected keyword_end, expecting ')'
+'.freeze; end 
+             ^
+/Users/jasonsutter/Documents/Projects/plant-me/app/views/plants/index.html.erb:53: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/jasonsutter/Documents/Projects/plant-me/app/views/plants/index.html.erb:55: syntax error, unexpected keyword_end, expecting ')'):
+  app/views/plants/index.html.erb:46: syntax error, unexpected ')'
+  app/views/plants/index.html.erb:49: syntax error, unexpected keyword_end, expecting ')'
+  app/views/plants/index.html.erb:53: syntax error, unexpected keyword_ensure, expecting ')'
+  app/views/plants/index.html.erb:55: syntax error, unexpected keyword_end, expecting ')'
+
+
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 56ms (Views: 47.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:03:29 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:04:07 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 7ms
+
+ActionView::Template::Error (wrong number of arguments (3 for 1..2)):
+    1: <h1 class="center">plant me</h1>
+    2: <center>
+    3: <%= form_tag plants_search_path, :method => 'get', class: "form-group" do %>
+    4:   <%= select_tag "plant[light]", options_for_select([["Bright", 3], ["Medium", 2], ["Low", 1]], "Bright",  {:class => 'form-control'}) %>
+    5:   <%= select_tag "plant[water]", options_for_select([["High", 3], ["Medium", 2], ["Low", 1]], "High") %>
+    6:   <%= select_tag "plant[size]", options_for_select([["Large", 3], ["Medium", 2], ["Small", 1]], "Large") %><br>
+    7:   <%= submit_tag("Search") %>
+  app/views/plants/index.html.erb:4:in `block in _app_views_plants_index_html_erb__3943568733535394229_70249406485220'
+  app/views/plants/index.html.erb:3:in `_app_views_plants_index_html_erb__3943568733535394229_70249406485220'
+
+
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (34.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 26ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:28 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:04:44 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 33ms (Views: 32.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:05:47 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 25.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:18 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 27ms (Views: 26.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:20 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:06:37 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:07:02 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 33ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:03 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 29ms (Views: 28.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:07:39 -0700
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:08:06 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 4ms
+
+SyntaxError (/Users/jasonsutter/Documents/Projects/plant-me/app/views/plants/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+....append=( submit_tag("Search"),  {:class => 'btn btn-primary...
+...                               ^):
+  app/views/plants/index.html.erb:18: syntax error, unexpected ',', expecting ')'
+
+
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+  Rendered /Users/jasonsutter/.rvm/gems/ruby-2.2.3/gems/actionpack-4.1.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (53.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+Processing by PlantsController#index as HTML
+  Rendered plants/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 31ms (Views: 30.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/plants.js?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/plants.css?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-08-25 18:08:21 -0700
