@@ -1,20 +1,64 @@
-<h1 class="center">plants search</h1>
 
 
-<div class="container green">
+<div class="container center search-box">
+  <h1 class='title'>plants search</h1>
+</div>
+<br>
+
+
+<div class="container">
   <div class="row">
+    <% if @plants.empty? %>
+     <div class="box center">
+        <h4 class='no-plant'>no plants matching your search</h4>
+      </div>
+    <% else %>
+      <center>
+        <% @plants.each do |plant| %>
+          <br>
+          <div class="col-sm-12 plant-box">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <img src="<%= plant.image_url %>" class="tile-image">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
 
-    <div>
-      <h1>Name</h1>
-    </div>
-     <div>
-      <h1>Description</h1>
-    </div>
+            </div>
+            <div>
+              <h1>
+                <a class="tile-title" href="<%= plant.wiki_url %>"><%= plant.name.downcase %></a>
+              </h1>
+            </div>
+
+
+
+          <div class="row">
+            
+              <div class="col-sm-2 col-md-2 col-lg-2 left toppad">
+                <strong><p>Light needs: <%= light_num_to_name(plant.light_requirement) %>
+             <br>
+                   <strong><p>Watering needs:  <%= water_num_to_name(plant.water_requirement) %>
+              <br>
+              
+                   <strong><p>Plant height: <%= size_num_to_name(plant.max_height) %></p></strong>
+              </div>
+          
+            <div class="col-sm-3 col-md-3 col-lg-3 toppad left">
+              <p>
+                <%= plant.description %>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <br>
+        <% end  %>
+      </center>
+    <% end  %>
   </div>
-
 </div>
 <br>
 <center>
-  <a class="btn btn-primary btn-lg center" href="/plants" role="button">Back</a>
+  <a class="btn btn-success btn-lg center" href="/" role="button">Back</a>
 </center>
-
+<br><br><br><br><br><br><br>
