@@ -29,21 +29,23 @@
               </h1>
             </div>
 
-            <div>
-              <p>
-                <%= plant.description %>
-            </p>
-          </div>
+
 
           <div class="row">
-            <div class="col-sm-2 col-md-2 col-lg-2">
-              <strong><p>Light needs: <%= light_num_to_name(plant.light_requirement) %>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                 <strong><p>Water Requirement:  <%= water_num_to_name(plant.water_requirement) %>
-            </div>
-            <div class="col-sm-2 col-md-2 col-lg-2">
-                 <strong><p>Plant Height: <%= size_num_to_name(plant.max_height) %></p> </strong>
+            
+              <div class="col-sm-2 col-md-2 col-lg-2 left toppad">
+                <strong><p>Light needs: <%= light_num_to_name(plant.light_requirement) %>
+             <br>
+                   <strong><p>Watering needs:  <%= water_num_to_name(plant.water_requirement) %>
+              <br>
+              
+                   <strong><p>Plant height: <%= size_num_to_name(plant.max_height) %></p></strong>
+              </div>
+          
+            <div class="col-sm-3 col-md-3 col-lg-3 toppad left">
+              <p>
+                <%= plant.description %>
+              </p>
             </div>
           </div>
 
@@ -57,6 +59,6 @@
 </div>
 <br>
 <center>
-  <a class="btn btn-primary btn-lg center" href="/" role="button">Back</a>
+  <a class="btn btn-success btn-lg center" href="/" role="button">Back</a>
 </center>
 <br><br><br><br><br><br><br>
