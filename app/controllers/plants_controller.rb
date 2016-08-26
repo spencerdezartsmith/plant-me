@@ -10,6 +10,7 @@ class PlantsController < ApplicationController
 
 # jason you might need to change the params for the show depending on how its passed in
   def show
+    @image = Image.find(rand(1..Image.all.count)).url
     @plant = Plant.find(params[:id])
   end
 
