@@ -18,17 +18,17 @@
           <br>
           <div class="col-sm-12 plant-box">
             <div class="col-sm-6 col-md-6 col-lg-6">
-             <img src="http://www.scienceclarified.com/photos/plant-3250.jpg" class="tile-image">
+             <img src="<%= plant.image_url %>" class="tile-image">
             </div>
             <div class="col-sm-6 col-md-6 col-lg-6">
-            
+
             </div>
             <div>
               <h1>
-                <a class="tile-title" href="/plants/<%= plant.id %>"><%= plant.name %></a>
+                <a class="tile-title" href="<%= plant.wiki_url %>"><%= plant.name.downcase %></a>
               </h1>
             </div>
-            
+
             <div>
               <p>
                 <%= plant.description %>
@@ -36,6 +36,14 @@
           </div>
 
           <div class="row">
+<<<<<<< HEAD
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <strong><p>Plant Light needs: <%= light_num_to_name(plant.light_requirement) %></p> </strong>
+
+              <strong><p>Plant Water Requirement:  <%= water_num_to_name(plant.water_requirement) %></p> </strong>
+
+              <strong><p>Plant Hight: <%= size_num_to_name(plant.max_height) %></p> </strong>
+=======
             <div class="col-sm-2 col-md-2 col-lg-2">
               <strong><p>Light needs: <%= light_num_to_name(plant.light_requirement) %>
             </div>
@@ -45,12 +53,13 @@
             </div>
             <div class="col-sm-2 col-md-2 col-lg-2">
                  <strong><p>Plant Height: <%= size_num_to_name(plant.max_height) %></p> </strong>
+>>>>>>> 1c93df61d8847fe25a3b38d4c4ea7438d2cb6aa7
             </div>
           </div>
 
         </div>
-      
-        <br>   
+
+        <br>
         <% end  %>
       </center>
     <% end  %>
