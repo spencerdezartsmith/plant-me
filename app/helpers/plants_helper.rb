@@ -1,18 +1,20 @@
 module PlantsHelper
-	def size_num_to_name(num)
-		if num >=2
-			"Large"
-		elsif num >=1
-			"Medium"
-		else
-			"Small"
-		end 
-	end
+	 def size_num_to_name(num)
+      if num < 3 
+        return "Small"
+      elsif num > 2 || num < 4 
+          return "Medium"
+      elsif num > 4 
+          return "Large"
+      end
+    end
+
+
 
 	def water_num_to_name(num)
-		if num >=2
+		if num == 3
 			"High"
-		elsif num >=1
+		elsif num == 2
 			"Medium"
 		else
 			"Low"
@@ -20,9 +22,9 @@ module PlantsHelper
 	end
 
 	def light_num_to_name(num)
-		if num >=2
+		if num == 3
 			"Bright"
-		elsif num >=1
+		elsif num == 2
 			"Medium"
 		else
 			"Low"
