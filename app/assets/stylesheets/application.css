@@ -14,73 +14,60 @@
  *= require_self
  */
 
-body{
+body {}
+.center {
+    text-align: center;
 }
-
-.center{
-  text-align: center;
+.green {
+    background-color: green;
 }
-
-.green{
-  background-color: green;
+.plant-box {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.75);
 }
-
-.plant-box{
-  background: #fff;
-  background: rgba(255,255,255,0.75);
+.title {
+    font-family: 'Cutive Mono', monospace;
+    text-shadow: -2px 1px 2px #F7F8FA;
+    font-size: 9em;
 }
-
-.title{
-	font-family: 'Cutive Mono', monospace;
-  text-shadow: 3px 3px 3px #595959;
-  font-size: 8em;
+.tile-title {
+    font-family: 'Cutive Mono', monospace;
+    text-shadow: 3px 3px 3px #595959;
+    font-size: 2em;
 }
-
-.tile-title{
-  font-family: 'Cutive Mono', monospace;
-  text-shadow: 3px 3px 3px #595959;
-  font-size: 2em;
+.tile-image {
+    margin-right: 50%;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
-
-.tile-image{
-  margin-right: 50%;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+.conditions {
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: -0.5px 0.5px 0.5px #F7F8FA;
+    font-weight: bold;
+    font-size: 1.5em;
 }
-
-.conditions{
-  font-family: 'Quicksand', sans-serif;
-  font-weight: bold;
-  font-size: 1.5em;
+.no-plant {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2em;
 }
-.no-plant{
-  font-family: 'Quicksand', sans-serif;
-  font-size: 2em;
-}
-
-
-.search-box{
-	   margin-top: 5%;
+.search-box {
+    margin-top: 5%;
     padding: 30px 15px;
-	   background: #fff;
-    background: rgba(255,255,255,0.25);
+    background: #fff;
+    background: rgba(255, 255, 255, 0.25);
 }
-
-.title-box{
-	 margin-top: 15%;
-   padding: 30px 15px;
-	 background: #fff;
-    background: rgba(255,255,255,0.25);
+.title-box {
+    margin-top: 15%;
+    padding: 25px 10px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.25);
 }
-
-
-
-.box{
-	margin-top: 5px;
-	margin-bottom: 20px;
+.box {
+    margin-top: 5px;
+    margin-bottom: 20px;
     padding: 30px;
     background: #fff;
-    background: rgba(255,255,255,0.25);
+    background: rgba(255, 255, 255, 0.25);
 }
