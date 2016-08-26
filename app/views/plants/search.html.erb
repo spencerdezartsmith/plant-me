@@ -36,12 +36,15 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-6">
-              <strong><p>Plant Light needs: <%= light_num_to_name(plant.light_requirement) %></p> </strong>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+              <strong><p>Light needs: <%= light_num_to_name(plant.light_requirement) %>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                 <strong><p>Water Requirement:  <%= water_num_to_name(plant.water_requirement) %>
             
-              <strong><p>Plant Water Requirement:  <%= water_num_to_name(plant.water_requirement) %></p> </strong>
-            
-              <strong><p>Plant Hight: <%= size_num_to_name(plant.max_height) %></p> </strong>
+            </div>
+            <div class="col-sm-2 col-md-2 col-lg-2">
+                 <strong><p>Plant Height: <%= size_num_to_name(plant.max_height) %></p> </strong>
             </div>
           </div>
 
