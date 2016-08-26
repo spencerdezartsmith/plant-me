@@ -41,9 +41,9 @@
 <h1 class="center">plant me</h1>
 <center>
 <%= form_tag plants_search_path, :method => 'get', class: "form-group" do %>
-  <%= select_tag "plant[light]", options_for_select([ "Bright", "Medium", "Low" ], "Bright") %>
-  <%= select_tag "plant[water]", options_for_select([ "High", "Medium", "Low" ], "High") %>
-  <%= select_tag "plant[size]", options_for_select([ "Large", "Medium", "Small" ], "Large") %><br>
+  <%= select_tag "plant[light]", options_for_select([["Bright", 3], ["Medium", 2], ["Low", 1]], "Bright") %>
+  <%= select_tag "plant[water]", options_for_select([["High", 3], ["Medium", 2], ["Low", 1]], "High") %>
+  <%= select_tag "plant[size]", options_for_select([["Large", 3], ["Medium", 2], ["Small", 1]], "Large") %><br>
   <%= submit_tag("Search") %>
 
 <% end %>

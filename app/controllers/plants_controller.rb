@@ -1,9 +1,10 @@
 class PlantsController < ApplicationController
   def index
-    p params
+    @image = Image.find(rand(1..Image.all.count))
   end
 
   def search
-    p params
+    
+    @plants = Plant.where(light_requirement: params['plants']['light'], water_requirement: params['plants']['water'],)
   end
 end
