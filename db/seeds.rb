@@ -1,6 +1,5 @@
 # read in the text file
 plants = []
-# plant_file = ''
 
 File.readlines('db/plant_data.txt').each do |line|
   plants << line.chomp
@@ -8,17 +7,20 @@ end
 
 # each plant as an array
 each_plant = []
-plants.each_slice(5) { |plant| each_plant << plant }
+plants.each_slice(7) { |plant| each_plant << plant }
 
 # seed database
 each_plant.each do |plant|
   Plant.create(
               name: plant[0],
-              description: plant[1],
-              max_height: plant[2].to_i,
-              light_requirement: plant[3].to_i,
-              water_requirement: plant[4].to_i
+              image_url: plant[1],
+              description: plant[2],
+              max_height: plant[3].to_i,
+              light_requirement: plant[4].to_i,
+              water_requirement: plant[5].to_i,
+              wiki_url: plant[6]
               )
+
 end
 
 
