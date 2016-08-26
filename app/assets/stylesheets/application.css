@@ -14,10 +14,36 @@
  *= require_self
  */
 
+body{
+}
+
 .center{
   text-align: center;
 }
 
 .green{
   background-color: green;
+}
+
+.title{
+	font-family: 'Gravitas One', cursive;
+	/*font-family: 'Baloo Paaji', cursive;*/
+	font-size: 4em;
+}
+
+
+.title-box{
+	margin-top: 15%;
+    padding: 30px 15px;
+	background: #fff;
+    background: rgba(255,255,255,0.75);
+}
+
+
+.box{
+	margin-top: 15px;
+	margin-bottom: 20px;
+    padding: 30px;
+    background: #fff;
+    background: rgba(255,255,255,0.75);
 }
