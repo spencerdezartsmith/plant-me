@@ -16,11 +16,16 @@
       <center>
         <% @plants.each do |plant| %>
           <br>
-          
-          <div class="col-sm-12 plant-box">  
+          <div class="col-sm-12 plant-box">
+            <div class="col-sm-6 col-md-6 col-lg-6">
+             <img src="http://www.scienceclarified.com/photos/plant-3250.jpg" class="tile-image">
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+            
+            </div>
             <div>
               <h1>
-                <a href="/plants/<%= plant.id %>"><%= plant.name %></a>
+                <a class="tile-title" href="/plants/<%= plant.id %>"><%= plant.name %></a>
               </h1>
             </div>
             
@@ -31,18 +36,12 @@
           </div>
 
           <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4">
-              
-              <strong><p>Plant Light needs: <%= plant.light_requirement %></p> </strong>
-            </div>
-
-             <div class="col-sm-4 col-md-4 col-lg-4">
-             
-              <strong><p>Plant Water Requirement:  <%= plant.water_requirement %></p> </strong>
-            </div>
-
-             <div class="col-sm-4 col-md-4 col-lg-4">
-              <strong><p>Plant Hight: <%= plant.max_height %></p> </strong>
+            <div class="col-sm-6 col-md-6 col-lg-6">
+              <strong><p>Plant Light needs: <%= light_num_to_name(plant.light_requirement) %></p> </strong>
+            
+              <strong><p>Plant Water Requirement:  <%= water_num_to_name(plant.water_requirement) %></p> </strong>
+            
+              <strong><p>Plant Hight: <%= size_num_to_name(plant.max_height) %></p> </strong>
             </div>
           </div>
 
