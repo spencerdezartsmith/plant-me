@@ -14,10 +14,60 @@
  *= require_self
  */
 
+body{
+}
+
 .center{
   text-align: center;
 }
 
 .green{
   background-color: green;
+}
+
+.plant-box{
+  background: #fff;
+  background: rgba(255,255,255,0.75);
+  margin: 10px;
+}
+
+.title{
+	font-family: 'Cutive Mono', monospace;
+  text-shadow: 3px 3px 3px #595959;
+  font-size: 8em;
+}
+
+
+.conditions{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.no-plant{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 2em;
+}
+
+
+.search-box{
+	   margin-top: 5%;
+    padding: 30px 15px;
+	   background: #fff;
+    background: rgba(255,255,255,0.25);
+}
+
+.title-box{
+	margin-top: 15%;
+    padding: 30px 15px;
+	background: #fff;
+    background: rgba(255,255,255,0.25);
+}
+
+
+.box{
+	margin-top: 5px;
+	margin-bottom: 20px;
+    padding: 30px;
+    background: #fff;
+    background: rgba(255,255,255,0.25);
 }

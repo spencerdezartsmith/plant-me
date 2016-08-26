@@ -14,10 +14,6 @@ RSpec.describe Plant, :type => :model do
     expect(perfect_plant).to be_valid
   end
 
-  it "is not valid without a max_width" do
-    expect(perfect_plant).to be_valid
-  end
-
   it "is not valid without a max_height" do
     expect(perfect_plant).to be_valid
   end

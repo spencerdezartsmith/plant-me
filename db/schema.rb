@@ -26,7 +26,6 @@ ActiveRecord::Schema.define(version: 20160825174913) do
     t.string   "name"
     t.text     "description"
     t.integer  "max_height"
-    t.integer  "max_width"
     t.integer  "light_requirement"
     t.integer  "water_requirement"
     t.datetime "created_at"
