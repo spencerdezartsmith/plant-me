@@ -1,0 +1,51 @@
+<!-- <h1 class="center">plant me</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="form-group">
+        <label for="lights_conditions">Light Conditions:</label>
+        <select class="form-control" id="lights_conditions">
+          <option>High Light</option>
+          <option>Medium Light</option>
+          <option>Low Light</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="form-group">
+        <label for="size_conditions">Water Conditions:</label>
+        <select class="form-control" id="size_conditions">
+          <option>High Watering</option>
+          <option>Medium Watering</option>
+          <option>Light Watering</option>
+        </select>
+      </div>
+  </div>
+    <div class="col-sm-4 col-md-4 col-lg-4">
+      <div class="form-group">
+        <label for="size_conditions">Plant Size:</label>
+        <select class="form-control" id="size_conditions">
+          <option>Large Plant</option>
+          <option>Medium Plant</option>
+          <option>Low Plant</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+
+ -->
+
+<h1 class="center">plant me</h1>
+<center>
+<%= form_tag plants_search_path, :method => 'get', class: "form-group" do %>
+  <%= select_tag "plant[light]", options_for_select([["Bright", 3], ["Medium", 2], ["Low", 1]], "Bright") %>
+  <%= select_tag "plant[water]", options_for_select([["High", 3], ["Medium", 2], ["Low", 1]], "High") %>
+  <%= select_tag "plant[size]", options_for_select([["Large", 3], ["Medium", 2], ["Small", 1]], "Large") %><br>
+  <%= submit_tag("Search") %>
+
+<% end %>
+
+</center>
