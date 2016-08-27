@@ -7,6 +7,7 @@
 - return list of plants that fit the criteria
 - each plant links to wikipedia page to provide further information
 - simplistic and beautiful design
+- https://plant-me.herokuapp.com/
 
 <img width="1275" alt="screen shot 2016-08-26 at 7 48 33 pm" src="https://cloud.githubusercontent.com/assets/17863697/18024748/da871776-6bc6-11e6-99f7-7e5459ee0c6c.png">
 <img width="1274" alt="screen shot 2016-08-26 at 7 49 40 pm" src="https://cloud.githubusercontent.com/assets/17863697/18024749/dcd18520-6bc6-11e6-817c-636bae4923cf.png">
